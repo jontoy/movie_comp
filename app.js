@@ -1,5 +1,5 @@
 const fetchData = async (searchTerm) => {
-    const response = await axios.get('http://www.omdbapi.com/', {
+    const response = await axios.get('https://www.omdbapi.com/', {
         params: {
             apikey: '70a2fe47',
             s: searchTerm
@@ -14,7 +14,7 @@ const fetchData = async (searchTerm) => {
 
 
 const fetchDataSingle = async (id) => {
-    const response = await axios.get('http://www.omdbapi.com/', {
+    const response = await axios.get('https://www.omdbapi.com/', {
         params: {
             apikey: '70a2fe47',
             i: id
